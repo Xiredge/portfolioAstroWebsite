@@ -16,7 +16,8 @@ export const NAV_LINKS: NavLink[] = [
   {
     title: "Home",
     id: "home",
-    url: "/",        
+    url: "/",
+    tooltip: "Home",        
   },
   {
     title: "Blog",
