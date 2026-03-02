@@ -38,7 +38,7 @@ const activeClasses = ["text-accent", "font-semibold"];
             NAV_LINKS.map((link) => {
               return (
                 <a
-                  href={link.redirect ? link.redirect : link.url}
+                  href={link.url}
                   target={link.redirect ? "_blank" : "_self"}
                   id={link.id}
                   class:list={[
