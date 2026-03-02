@@ -5,9 +5,7 @@ import { NAV_LINKS } from "../config";
 
 const { navbarActiveItemID } = Astro.props;
 const activeClasses = ["text-accent", "font-semibold"];
-const BASE = Astro.base ?? "/";
 ---
-
 
 <header id="main-header" class="px-2 md:px-6 py-4 relative z-50">
   <div class="mx-auto">
@@ -33,17 +31,14 @@ const BASE = Astro.base ?? "/";
           </div>
           <ThemeToggle class="sm:hidden" />
         </div>
-        <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-xs overflow-visible">
+        <div
+          class="flex flex-wrap items-center gap-3 sm:gap-4 text-xs overflow-visible"
+        >
           {
             NAV_LINKS.map((link) => {
-              // Build the correct href using Astro.base
-              const href = link.redirect 
-                ? link.redirect 
-                : `${BASE}${link.url?.replace(/^\/+/, "")}`; // removes leading slash to avoid //blog
-
               return (
                 <a
-                  href={href}
+                  href={link.redirect ? link.redirect : link.url}
                   target={link.redirect ? "_blank" : "_self"}
                   id={link.id}
                   class:list={[
