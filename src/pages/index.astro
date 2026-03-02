@@ -19,18 +19,18 @@ const allPosts = await getCollection("blog");
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const techStack: Record<string, string> = {
+  html: "HTML5",
+  css:"Cascading Style Sheet",
   js: "JavaScript",
-  ts: "TypeScript",
   "node.js": "Node",
+  express: "Express.js",
   astro: "This site is built on astro",
   python: "Python",
+  django: "Django",
   sql: "SQL",
-  "claude-code": "Best tool ever",
-  "next.js": "Next.js",
-  aws: "AWS",
-  gcp: "GCP",
-  docker: "Docker",
-  tf: "Terraform",
+  ejs: "EJS",
+  rest:"REST API",
+  git: "Git",
 };
 
 const projects: Array<{
@@ -40,16 +40,22 @@ const projects: Array<{
   icon: string;
 }> = [
   {
-    title: "terminus",
-    description: "a minimalist astro template for developers",
-    link: "https://github.com/ojoanalogo/terminus-astro-template",
-    icon: "💻",
+    title: "Moon Phase",
+    description: "Finds the moon phase, illumination and elongation based on date input, using DE421 and skyfield library",
+    link: "https://github.com/Xiredge/Moon-Phase",
+    icon: "🌕",
   },
   {
-    title: "Another Project",
-    description: "Add your own projects here",
-    icon: "💻",
-    link: "",
+    title: "SimCo Construction Calculator",
+    description: "Fetch prices from the Sim Companies API and calculates the material needed and cost for each building level",
+    icon: "🧱",
+    link: "https://github.com/Xiredge/SimCo-Construction-Calculator",
+  },
+   {
+    title: "SimCo Aerospace Tool",
+    description: "Scrapes sim companies aerospace chat and use AI to read the data and extract the prices of aerospace products [On Going]",
+    icon: "🚀",
+    link: "https://github.com/Xiredge/Aerospace",
   },
 ];
 ---
@@ -65,7 +71,7 @@ const projects: Array<{
   <main>
     <section id="about" aria-labelledby="about-heading">
       <Card role="region">
-        <TerminalHeader title="terminal - ssh guest@terminus" />
+        <TerminalHeader title="terminal - ssh guest@website" />
 
         <!-- Content -->
         <div class="text-xs">
@@ -73,10 +79,10 @@ const projects: Array<{
             <div class="flex items-center gap-3 mb-4">
               <div class="flex flex-col gap-1">
                 <h1 class="text-2xl">
-                  🪴 hello <span class="text-primary font-medium">visitor</span>
+                  🌱 Hi, <span class="text-primary font-medium">I'm Jerick!</span>
                 </h1>
                 <p class="text-muted text-xs">
-                  this is terminus, an astro template
+                  Welcome to my website
                 </p>
               </div>
             </div>
@@ -84,35 +90,35 @@ const projects: Array<{
             <!-- Personal paragraph -->
             <div class="bg-gray-200/50 dark:bg-gray-500/10 rounded-lg p-3 mb-4">
               <p class="text-primary leading-relaxed">
-                you're supossed to write something interesting here, but is up
-                to you
+                I’m still at the beginning of my journey in web and software development. I'm trying to reignite this old passion of mine and turn it to something meaningful.
+
+                I created this website to share the technologies I’m currently learning and showcase my skills as I progress in this journey.
+
+                A Stranger Things Fan. #TeamSteve.
+
+                Thanks for stopping by!
               </p>
             </div>
 
             <Divider class="mb-2" />
 
-            <InfoRow label="location">the internet 🛜</InfoRow>
+            <InfoRow label="location">Philippines</InfoRow>
 
-            <InfoRow label="main hobby"> vibecoding </InfoRow>
+            <InfoRow label="main hobby"> Gaming! </InfoRow>
 
             <InfoRow label="current project">
-              <ExternalLink
-                href="https://google.com"
-                label="Visit Google, an evil company"
-              >
-                world domination
-              </ExternalLink>
+                SimCo Aerospace Tool
             </InfoRow>
 
             <InfoRow label="main interests">
-              science, coding, claude, startups
+              Coding, Economics, Big Data
             </InfoRow>
 
             <InfoRow label="contact">
               <a
                 class="text-accent hover:underline focus:outline-none"
-                href="mailto:hello@youremail.com"
-                aria-label="Send email to site author">hello@youremail.com</a
+                href="mailto:jerickgamba@gmail.com"
+                aria-label="Send email to site author">jerickgamba@gmail.com</a
               >
             </InfoRow>
 
