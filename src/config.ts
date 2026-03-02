@@ -16,19 +16,19 @@ export const NAV_LINKS: NavLink[] = [
   {
     title: "index.html",
     id: "home",
-    url: "/",
+    url: "",
     tooltip: "Home",
   },
   {
     title: "blog.sql",
     id: "blog",
-    url: "/blog",
+    url: "blog",
     tooltip: "Posts and stuff",
   },
   {
     title: "happy.me",
     id: "happy",
-    url: "/happy",
+    url: "happy",
     tooltip: "Will make you smile :)"
   }
 ];
