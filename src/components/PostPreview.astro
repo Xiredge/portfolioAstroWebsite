@@ -14,11 +14,13 @@ function getFormattedDate(date: string | number | Date) {
 const date = new Date(post.data.publishDate);
 const datetime = date.toISOString();
 const postDate = getFormattedDate(date);
+
+const BASE = "/portfolioAstroWebsite/";
 ---
 
 <div class="flex flex-row gap-2 items-center text-sm">
   <time datetime={datetime} class="min-w-[120px]">{postDate}</time>
-  <a class="hover:underline hover:text-accent" href={`/blog/${post.slug}/`}>
+  <a class="hover:underline hover:text-accent" href={`${BASE}blog/${post.slug}/`}>
     {post.data.title}
   </a>
 </div>
