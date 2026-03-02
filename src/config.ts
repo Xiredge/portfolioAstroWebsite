@@ -14,23 +14,22 @@ export interface NavLink {
 
 export const NAV_LINKS: NavLink[] = [
   {
-    title: "index.html",
+    title: "Home",
     id: "home",
-    url: "",
-    tooltip: "Home",
+    url: "/",        
   },
   {
-    title: "blog.sql",
+    title: "Blog",
     id: "blog",
-    url: "blog",
+    url: "/blog",     
     tooltip: "Posts and stuff",
   },
   {
-    title: "happy.me",
+    title: "Happy",
     id: "happy",
-    url: "happy",
-    tooltip: "Will make you smile :)"
-  }
+    url: "/happy",     
+    tooltip: "Will make you smile :)",
+  },
 ];
 
 export type SocialPlatform = "twitter" | "github" | "instagram" | "linkedin";
