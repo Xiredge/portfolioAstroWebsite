@@ -1,8 +1,8 @@
 ---
 publishDate: 2026-03-02
 title: New Project
-description: Bla bla bla
-published: false
+description: Trying to brainstorm
+published: true
 heroImage: simco1.png
 ---
 
