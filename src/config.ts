@@ -21,13 +21,13 @@ export const NAV_LINKS: NavLink[] = [
   {
     title: "Blog",
     id: "blog",
-    url: "portfolioAstroWebsite/blog",     
+    url: "/blog",     
     tooltip: "Posts and stuff",
   },
   {
     title: "Happy",
     id: "happy",
-    url: "portfolioAstroWebsite/happy",     
+    url: "/happy",     
     tooltip: "Will make you smile :)",
   },
 ];
