@@ -39,8 +39,6 @@ const activeClasses = ["text-accent", "font-semibold"];
               return (
                 <a
                   href={link.url}
-                  target={link.redirect ? "_blank" : "_self"}
-                  id={link.id}
                   class:list={[
                     "text-secondary hover:text-accent transition-all duration-200",
                     link.tooltip && "tooltip",
