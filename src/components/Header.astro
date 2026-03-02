@@ -38,7 +38,9 @@ const activeClasses = ["text-accent", "font-semibold"];
             NAV_LINKS.map((link) => {
               return (
                 <a
-                  href={link.url}
+                  href={link.redirect ? link.redirect : `${base}${link.url.replace(/^\/+/, '')}`}
+                  target={link.redirect ? "_blank" : "_self"}
+                  id={link.id}
                   class:list={[
                     "text-secondary hover:text-accent transition-all duration-200",
                     link.tooltip && "tooltip",
