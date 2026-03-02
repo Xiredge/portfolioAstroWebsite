@@ -4,8 +4,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://Xiredge.github.io",
-  base: "/portfolioAstroWebsite/",
+  site: "https://Xiredge.github.io/portfolioAstroWebsite/",
   integrations: [
     sitemap(),
     tailwind(),
