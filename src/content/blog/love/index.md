@@ -2,7 +2,7 @@
 publishDate: 2026-03-02
 title: Love is blind
 description: She said no, I said yes
-published: true
+published: false
 heroImage: drawingonsand.jpg
 tags: ["love", "sand", "life"]
 ---

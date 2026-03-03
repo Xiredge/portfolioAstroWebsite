@@ -41,8 +41,8 @@ const projects: Array<{
 }> = [
   {
     title: "Moon Phase",
-    description: "Finds the moon phase, illumination and elongation based on date input, using DE421 and skyfield library",
-    link: "https://github.com/Xiredge/Moon-Phase",
+    description: "Finds the moon phase, illumination and elongation based on date input, using DE421 planetary ephemeris and skyfield library",
+    link: "https://moon-phase-063a.onrender.com/",
     icon: "🌕",
   },
   {
@@ -157,7 +157,7 @@ const projects: Array<{
     <section id="projects" class="mt-2">
       <Card class="text-secondary" role="region" aria-label="Project showcase">
         <SectionHeading>💻My projects</SectionHeading>
-        <div class="space-y-2" role="list">
+        <div class="space-y-2 text-xs" role="list">
           {
             projects.map((project, index) => (
               <ProjectItem
