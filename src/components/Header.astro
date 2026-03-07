@@ -1,5 +1,6 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro";
+// Uncomment to re-enable theme toggle
+// import ThemeToggle from "./ThemeToggle.astro";
 import "../styles/tooltip.css";
 import { NAV_LINKS } from "../config";
 
@@ -32,7 +33,8 @@ const BASE = "/portfolioAstroWebsite/";
               Jerick Gamba
             </a>
           </div>
-          <ThemeToggle class="sm:hidden" />
+          <!-- Uncomment to re-enable theme toggle -->
+          <!-- <ThemeToggle class="sm:hidden" /> -->
         </div>
 
         <!-- Navigation Links -->
@@ -60,7 +62,8 @@ const BASE = "/portfolioAstroWebsite/";
               </a>
             );
           })}
-          <ThemeToggle class="hidden sm:block" />
+          <!-- Uncomment to re-enable theme toggle -->
+          <!-- <ThemeToggle class="hidden sm:block" /> -->
         </div>
       </nav>
     </div>
